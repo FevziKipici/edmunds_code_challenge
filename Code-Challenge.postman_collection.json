@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "e578e0b8-3e04-4d39-aa11-c6ee7462da24",
+		"name": "Code-Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllPerson",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/persons/person",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"persons",
+						"person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "savePerson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Ahmet\",\r\n    \"lastName\":\"sdsdsd\",\r\n    \"street1\":\"Atatürk\",\r\n    \"state\":\"NY\",\r\n    \"birthDate\":\"01-11-2011\",\r\n    \"city\":\"Ankara\",\r\n    \"zipCode\":\"06660\",\r\n\r\n    \"additionalAddresses\":[{\r\n         \"street1\":\"asdsad\",\r\n    \"state\":\"asds\",\r\n    \"city\":\"asdasd\",\r\n    \"zipCode\":\"56565\"\r\n    }]\r\n\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/persons/person",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"persons",
+						"person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePerson",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getPerson",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getPersonsByLastName",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getAllAddress",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "saveAddress",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \r\n        \"street1\": \"Deneme\",\r\n        \"street2\": \"Deneme\",\r\n        \"city\": \"Deneme\",\r\n        \"state\": \"ABC\",\r\n        \"zipCode\": \"54356\",\r\n        \"person\":{\r\n          \"id\":1 \r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/addresses/address",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						"address"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAddress",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getAddress",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "updateAddress",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "updatePerson",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"firstName\":\"Mike\",\r\n    \"lastName\":\"Snake\",\r\n    \"street1\":\"Banana\",\r\n    \"state\":\"Florida\",\r\n    \"city\":\"Miami\",\r\n    \"zipCode\":\"656432\"\r\n\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/persons/person",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"persons",
+						"person"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
